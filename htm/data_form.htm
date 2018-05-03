@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Xray Employee Data Form</title>
+	<meta charset="utf-8" >
+	<link rel="stylesheet" type="text/css" href="../common/form_val.css" >
+	<script type="text/javascript" src="../common/form_val.js"></script>
+</head>
+
+<body>
+<div id="container">
+<h2 align="center">Employee Project Data Form</h2>
+<form name="employee" action="" method="post"  >
+  <table id="form_tbl">
+	<tr>
+		<td colspan="2">
+        	<span id="intro">
+        		Please be sure to complete all fields in this form. Failure to
+				do so will prevent you from submitting this form. Thank you for
+				your cooperation.
+			</span>
+		</td>
+	</tr>
+	<tr>
+		<td class="labels">First Name:</td>
+		<td class="inputs"><input name="fn" id="first" size="25" /></td>
+	</tr>
+	<tr>
+		<td class="labels">Last Name:</td>
+		<td class="inputs"><input name="ln" id="last" size="35" /></td>
+	</tr>
+	<tr>
+		<td class="labels">Department Code:</td>
+		<td class="inputs"><input name="code" id="num" size="6" maxlength="6" /></td>
+	</tr>
+	
+	<tr>
+		<td class="labels" style="vertical-align:top">Project Assigned:</td>
+		<td class="inputs">
+        	<input type="checkbox" name="qa" value="1">QA<br/>
+            <input type="checkbox" name="test" value="2">Testing<br/>
+            <input type="checkbox" name="dev" value="3">Development    
+        </td>
+	</tr>
+	<tr>
+		<td class="labels" style="vertical-align:top">Employee Category:</td>
+		<td class="inputs">
+			<span class="radio"><input type="radio" name="emp" value="Technical" />Technical</span>
+			<span class="radio"><input type="radio" name="emp" value="Management" />Management</span>
+			<span class="radio"><input type="radio" name="emp" value="Operations" />Operations</span>
+			<span class="radio"><input type="radio" name="emp" value="Staff" />Staff</span>
+        </td>
+	</tr>
+	<tr>
+		<td colspan="2" style="text-align:center">
+			<input type="submit" value="Send Employee Data" name="submit" />
+			<input type="reset" value="Clear Employee Data" name="reset" />
+		</td>
+	</tr>
+  </table>
+</form>
+</div>
+</body>
+</html>
