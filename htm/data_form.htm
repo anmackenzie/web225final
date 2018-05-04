@@ -10,7 +10,7 @@
 <body>
 <div id="container">
 <h2 align="center">Employee Project Data Form</h2>
-<form name="employee" action="" method="post"  >
+<form name="employee" action="feedback.htm" onsubmit="return val_data()" method="post"  >
   <table id="form_tbl">
 	<tr>
 		<td colspan="2">
@@ -33,13 +33,13 @@
 		<td class="labels">Department Code:</td>
 		<td class="inputs"><input name="code" id="num" size="6" maxlength="6" /></td>
 	</tr>
-	
+
 	<tr>
 		<td class="labels" style="vertical-align:top">Project Assigned:</td>
 		<td class="inputs">
-        	<input type="checkbox" name="qa" value="1">QA<br/>
-            <input type="checkbox" name="test" value="2">Testing<br/>
-            <input type="checkbox" name="dev" value="3">Development    
+        	<input type="checkbox"  name="qa" value="1">QA<br/>
+            <input type="checkbox"  name="test" value="2">Testing<br/>
+            <input type="checkbox" name="dev" value="3">Development
         </td>
 	</tr>
 	<tr>
