@@ -17,8 +17,6 @@ Matt Harrison:
  *		Pre:
  *		Post:
 */
-  writeCookies();
-
 /********Functions******/
 function findCookie(val) {
     var cookie = null;
@@ -42,6 +40,7 @@ function findCookie(val) {
              return cookie;
           }
         }
+    console.log(cookie);
 		return cookie;
 }
 
@@ -53,10 +52,14 @@ var code = findCookie("code");
 var empVal = findCookie("empVal");
 var proj = findCookie("proj");
 
-var cookies = [fn,ln,code,empVal,proj];
 /********Functions******/
 function writeCookies(){
-  for(i=0; i < 5 ; i++){
- document.getElementsByClassName("target")[i].innerHTML += cookies[i];
-}
+//   for(i=0; i < 5 ; i++){
+//  document.getElementsByClassName("target")[i].innerHTML += cookies[i];
+// }
+document.getElementById("fn").innerHTML += fn;
+document.getElementById("ln").innerHTML += ln;
+document.getElementById("code").innerHTML += code;
+document.getElementById("empVal").innerHTML += empVal;
+document.getElementById("proj").innerHTML += proj;
 }

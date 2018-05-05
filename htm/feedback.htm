@@ -5,9 +5,13 @@
 	<meta charset="utf-8" >
 	<link rel="stylesheet" type="text/css" href="../common/feedback.css" />
 	<script type="text/javascript" src="../common/feedback.js" ></script>
+
+<!--source :
+https://www.w3schools.com/jsref/event_onload.asp
+-->
 </head>
 
-<body>
+<body onload="writeCookies();">
 <div id="container">
 <h2 align="center">Xray Corporation Employee Data Form</h2>
 <form name="employee" action="thanks.htm" method="post"  >
@@ -24,23 +28,23 @@
 	</tr>
 	<tr>
 		<td width="100%" align="right">First Name:</td>
-		<td class="target"><!-- appropriate cookie data here --></td>
+		<td id="fn"><!-- appropriate cookie data here --></td>
 	</tr>
 	<tr>
 		<td align="right">Last Name:</td>
-		<td class="target"><!-- appropriate cookie data here --></td>
+		<td id="ln" ><!-- appropriate cookie data here --></td>
 	</tr>
 	<tr>
 		<td align="right">Department Code:</td>
-		<td class="target"><!-- appropriate cookie data here --></td>
+		<td id="code"><!-- appropriate cookie data here --></td>
 	</tr>
 	<tr>
 		<td align="right">Project Assigned:</td>
-		<td class="target"<!-- appropriate cookie data here --></td>
+		<td id="proj"><!-- appropriate cookie data here --></td>
 	</tr>
 	<tr>
 		<td align="right">Employee Category:</td>
-		<td class="target"><!-- appropriate cookie data here --></td>
+		<td id="empVal"><!-- appropriate cookie data here --></td>
 	</tr>
     <tr>
 		<td colspan="2" align="center">

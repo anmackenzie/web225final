@@ -122,9 +122,10 @@ else //Cookie Checkbox modified from Kevin Law
 	}
 }
 function makeThoseCookies(fn,ln,code,empVal){
-for (i = 0; i < arguments.length; i++)
-{
-document.cookie=Object.getOwnPropertyNames(arguments[i])+"="+arguments[i]+";expires="+expdate+"path='/'";
+document.cookie="fn =" + fn+ ";expires="+expdate+"path='/'";
+document.cookie="ln =" + ln+ ";expires="+expdate+"path='/'";
+document.cookie="code =" + code+ ";expires="+expdate+"path='/'";
+document.cookie="empVal =" + empVal+ ";expires="+expdate+"path='/'";
 document.cookie="proj = "+projCookie+";expires="+expdate+"path='/'";
-}
+
 }
