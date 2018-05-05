@@ -8,6 +8,9 @@ Functions
 */
 /********Sources******/
 /*
+array to toString
+https://www.w3schools.com/jsref/jsref_tostring_array.asp
+
 Matt Harrison:
 //copy and paste this on to every function
 /*	Purpose:
@@ -16,7 +19,7 @@ Matt Harrison:
 */
 /********Variables******/
 
-
+var projCookie = "";
 var time = new Date();
 var expdate = time.getDate()+(60*60*24*1000*7);
 
@@ -109,6 +112,7 @@ else //Cookie Checkbox modified from Kevin Law
 				if (getEm[i].checked == 1 )
 				{
 					proj.push(getEm[i].value);
+          projCookie = proj.toString();
 				}
 			}
 		}
@@ -121,6 +125,6 @@ function makeThoseCookies(fn,ln,code,empVal){
 for (i = 0; i < arguments.length; i++)
 {
 document.cookie=Object.getOwnPropertyNames(arguments[i])+"="+arguments[i]+";expires="+expdate+"path='/'";
-
+document.cookie="proj = "+projCookie+";expires="+expdate+"path='/'";
 }
 }
