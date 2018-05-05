@@ -6,6 +6,10 @@ Functions
 Variables
 */
 /********Sources******/
+//foreach
+//https://www.w3schools.com/jsref/jsref_forEach.asp
+//forloop
+//https://www.w3schools.com/js/js_loop_for.asp
 /*
 Matt Harrison:
 //copy and paste this on to every function
@@ -13,6 +17,8 @@ Matt Harrison:
  *		Pre:
  *		Post:
 */
+  writeCookies();
+
 /********Functions******/
 function findCookie(val) {
     var cookie = null;
@@ -38,4 +44,19 @@ function findCookie(val) {
         }
 		return cookie;
 }
+
+
 /********Variables******/
+var fn = findCookie("fn");
+var ln = findCookie("ln");
+var code = findCookie("code");
+var empVal = findCookie("empVal");
+var proj = findCookie("proj");
+
+var cookies = [fn,ln,code,empVal,proj];
+/********Functions******/
+function writeCookies(){
+  for(i=0; i < 5 ; i++){
+ document.getElementsByClassName("target")[i].innerHTML += cookies[i];
+}
+}
